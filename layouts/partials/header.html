@@ -33,6 +33,9 @@
           <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
       {{ end }}
+      <li class="menu__item">
+        <a href="/about">About</a>
+      </li>
     </ul>
 
     <div class="menu__burger">
@@ -61,7 +64,7 @@
   </button>
 
   {{ if or .Params.math .Site.Params.math }}
-  {{ partial "math.html" . }}
+    {{ partial "math.html" . }}
   {{ end }}
 
 </header>
